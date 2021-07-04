@@ -14,14 +14,14 @@ function addItem(item) {
   }
 }
 //Testing that all my items have been added
-console.log('** Test for adding items');
+console.log('** Test for adding items**');
 addItem('Shishitos');
 addItem('Halloumi cheese');
 addItem('Zucchini');
 addItem('Sungolds');
 addItem('Basil');
 //Logging the array to see that all my items have been added.
-console.log('Craving a mess of summer grilled stuff:', basket);
+console.log('Planning a summer mixed grill:', basket);
 
 //Creating a loop to check through all my items and a function to list them.
 function listItems() {
@@ -31,7 +31,7 @@ function listItems() {
   }
 }
 //Calling the function
-console.log('**Test for listing the shopping cart contents');
+console.log('**Test for listing the shopping cart contents**');
 listItems();
 
 //Creating function to empty the shopping cart.
@@ -40,7 +40,7 @@ function empty() {
 }
 
 //Testing empty function
-console.log('**Test for emptying the shopping cart');
+console.log('**Test for emptying the shopping cart**');
 empty();
 console.log('The peppers are browning - changing the plan and putting everything back', basket);
 
@@ -54,21 +54,21 @@ function isFull() {
 }
 
 //Testing the isFull function
-console.log('**Test for whether I can add something else');
+console.log('**Test for whether I made sure to make room for new stuff**');
 console.log('Is the cart full?', isFull());
 //adding new items so I can test the updated isFullfunction
 addItem('red onions');
 addItem('lemons');
 addItem('pecorino');
-addItem('shallots');
+addItem('fancy salt');
 addItem('lots of arugula');
 addItem('the expensive olive oil');
 
 //Logging my new array
-console.log('OK decided on a salad instead, so going with', basket);
+console.log('OK decided on a salad instead, so going with:', basket);
 
 //Testing my updated isFull function
-console.log('**Test for whether an addition to the cart was blocked');
+console.log('**Test for whether an addition to the cart was blocked**');
 console.log('Was the cart too small for that giant bottle of EVOO?', isFull(), basket);
 
 //The function checks the cart for the item in the argument.  If it is not present, the function returns null.
@@ -77,7 +77,7 @@ function removeItem(item) {
     return null;
     console.log('Item not found');
   }
-//Otherwise, the function removes the first matching item.
+  //Otherwise, the function removes the first matching item?
   else {
     basket.splice(item, 1);
     return item;
@@ -85,5 +85,5 @@ function removeItem(item) {
 }
 
 //Testing whether the remove function removed the correct item
-console.log('**Test for removing the first item');
-console.log('I forgot Anna hates', removeItem('red onions'), basket);
+console.log('**Test for removing the first item**');
+console.log('I forgot Anna hates', removeItem('red onions'),'so cancel that shiiiit', basket);
